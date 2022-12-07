@@ -800,7 +800,144 @@ body{
             }
             .techno{
                 width: 100%;
-                display: none;
+                .technoGrid{
+                    
+                    display: grid;
+                    grid-template-columns: repeat(6, 1fr);
+                    grid-template-rows: repeat(20, 1fr);
+                    grid-column-gap: 0px;
+                    grid-row-gap: 0px;
+                    width: 100%;
+                    height: 20*$coteCarre; 
+                        
+                    // color
+                    .div57 { grid-area: 1 / 4 / 2 / 5; }
+                    .div56 { grid-area: 1 / 5 / 2 / 6; }
+                    .div58 { grid-area: 1 / 6 / 2 / 7; }
+                    .div55 { grid-area: 2 / 6 / 3 / 7; }
+                    .div54 { grid-area: 19 / 1 / 20 / 2; }
+                    .div59 { grid-area: 20 / 1 / 21 / 2; }
+                    .div53 { grid-area: 20 / 2 / 21 / 3; }
+                    .div60 { grid-area: 20 / 3 / 21 / 4; }
+                    .div52 { grid-area: 20 / 4 / 21 / 5; }
+                    
+
+                    //number
+                    .div1 { grid-area: 1 / 1 / 2 / 2; }
+                    .div2 { grid-area: 1 / 2 / 2 / 3; }
+                    .div3 { grid-area: 1 / 3 / 2 / 4; }
+                    .div4 { grid-area: 2 / 4 / 3 / 5; }
+                    .div5 { grid-area: 2 / 5 / 3 / 6; }
+                    .div6 { grid-area: 3 / 6 / 4 / 7; }
+                    .div7 { grid-area: 4 / 6 / 5 / 7; }
+                    .div8 { grid-area: 5 / 6 / 6 / 7; }
+                    .div9 { grid-area: 18 / 1 / 19 / 2; }
+                    .div10 { grid-area: 17 / 1 / 18 / 2; }
+                    .div11 { grid-area: 19 / 2 / 20 / 3; }
+                    .div12 { grid-area: 20 / 5 / 21 / 6; }
+                    .div13 { grid-area: 20 / 6 / 21 / 7; }
+                    .div14 { grid-area: 19 / 3 / 20 / 4; }
+                    .div15 { grid-area: 19 / 4 / 20 / 5; }
+
+                    // div a enlever
+                    
+                    .div16 { display: none; }
+                    .div17 { display: none; }
+                    .div18 { display: none; }
+                    .div19 { display: none; }
+                    .div20 { display: none; }
+                    .div21 { display: none; }
+                    .div22 { display: none; }
+                    .div23 { display: none; }
+                    .div24 { display: none; }
+                    .div25 { display: none; }
+                    .div26 { display: none; }
+                    .div27 { display: none; }
+                    .div28 { display: none; }
+                    .div29 { display: none; }
+                    .div30 { display: none; }
+                    .div31 { display: none; }
+                    .div32 { display: none; }
+                    .div33 { display: none; }
+                    .div34 { display: none; }
+                    .div35 { display: none; }
+                    .div36 { display: none; }
+                    .div37 { display: none; }
+                    .div38 { display: none; }
+                    .div39 { display: none; }
+                    .div40 { display: none; }
+                    .div41 { display: none; }
+                    .div42 { display: none; }
+                    .div43 { display: none; }
+                    .div44 { display: none; }
+                    .div45 { display: none; }
+                    .div46 { display: none; }
+                    .div47 { display: none; }
+                    .div48 { display: none; }
+                    .div49 { display: none; }
+                    .div50 { display: none; }
+                    .div51 { display: none; }
+                    
+                    .div61 { display: none; }
+                    .div62 { display: none; }
+                    .div63 { display: none; }
+                    .div64 { display: none; }
+                    .div65 { display: none; }
+                    .div66 { display: none; }
+                    .div67 { display: none; }
+                    .div68 { display: none; }
+                    .div69 { display: none; }
+                    .div70 { display: none; }
+                    .div71 { display: none; }
+                    .div72 { display: none; }
+                    .div73 { display: none; }
+                    .div74 { display: none; }
+                    .div75 { display: none; }
+                    .div76 { display: none; }
+                    .div77 { display: none; }
+                    .div78 { display: none; }
+                    .div79 { display: none; }
+
+                    .titreTechno { grid-area: 3 / 1 / 5 / 6; }
+                    
+                    .iconTech{
+                        width: 2 * $coteCarre;
+                        height: 2 * $coteCarre;
+                    }  
+                    #php{
+                        bottom: -144px;
+                        left: 55%;
+                    } 
+                    #html{
+                        top: 273px;
+                        left: 5%;
+                    } 
+                    #symfony{
+                        top: 472px;
+                        right: 55%;
+                    } 
+                    #laravel{
+                        top: 552px;
+                        right: 15%;
+                    } 
+                    #js{
+                        bottom: 50px;
+                        right: 12%;
+                    } 
+                    #vue{
+                        bottom: 24px;
+                        left: 10%;
+                    } 
+                    #node{
+                        bottom: 200px;
+                        left: 20%;
+                    } 
+                    #css{
+                        top: 352px;
+                        right: 15%;
+                    } 
+                
+                }
             }
         }
     }
