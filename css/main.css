@@ -1,0 +1,1536 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap");
+@font-face {
+  font-family: "ProductSansBlack";
+  src: url("../fonts/google-sans-cufonfonts/ProductSans-Black.ttf");
+}
+.color1 {
+  color: #1876D1;
+  font-family: "ProductSansBlack";
+}
+
+.color2 {
+  color: #388E3C;
+  font-family: "ProductSansBlack";
+}
+
+.color3 {
+  color: #D32F2F;
+  font-family: "ProductSansBlack";
+}
+
+.color4 {
+  color: #7B20A2;
+  font-family: "ProductSansBlack";
+}
+
+.drapeauClique {
+  position: absolute;
+  height: 260px;
+  top: 30vh;
+  left: 50%;
+  translate: -50%;
+}
+
+.drapeauNone {
+  display: none;
+}
+
+.bombe {
+  z-index: 200;
+  width: 300px;
+  height: 300px;
+  background: #031927;
+  border-radius: 50%;
+  position: fixed;
+  opacity: 0;
+  transition: opacity 100ms;
+  top: 50vh;
+  left: 50vw;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.bombe .chiffreBombe {
+  font-size: 250px;
+}
+
+.number {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number span {
+  font-size: 30px;
+}
+
+body {
+  background-color: #031927;
+  margin: 0;
+  padding: 0;
+}
+body .header {
+  height: 65px;
+}
+body .test {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 1300px;
+  border-radius: 65px;
+  background-image: url("../images/font-vert.png");
+  background-repeat: repeat;
+}
+body .test .heroBanner {
+  position: relative;
+  height: 780px;
+  width: 100%;
+}
+body .test .heroBanner .bigChiffre {
+  position: absolute;
+  z-index: 10;
+}
+body .test .heroBanner #bigChiffre1 {
+  font-size: 380px;
+  top: -60px;
+  left: 12vw;
+  margin: 0;
+  transform: rotate(-30deg);
+}
+body .test .heroBanner #bigChiffre2 {
+  position: absolute;
+  font-size: 400px;
+  bottom: 5vh;
+  left: 5vw;
+  margin: 0;
+  transform: rotate(25deg);
+}
+body .test .heroBanner #bigChiffre3 {
+  position: absolute;
+  font-size: 350px;
+  top: -50px;
+  right: 5vw;
+  margin: 0;
+  transform: rotate(-45deg);
+}
+body .test .heroBanner #bigChiffre4 {
+  position: absolute;
+  font-size: 400px;
+  bottom: -5vh;
+  right: 15vw;
+  margin: 0;
+  transform: rotate(15deg);
+}
+body .test .heroBanner .gridTitre {
+  position: absolute;
+  top: 130px;
+  left: 325px;
+  width: 650px;
+  height: 455px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url("../images/Font-claire.png");
+  background-repeat: repeat;
+}
+body .test .heroBanner .gridTitre .div1 {
+  grid-area: 7/8/8/9;
+}
+body .test .heroBanner .gridTitre .div2 {
+  grid-area: 6/1/7/2;
+}
+body .test .heroBanner .gridTitre .div3 {
+  grid-area: 7/1/8/2;
+}
+body .test .heroBanner .gridTitre .div4 {
+  grid-area: 7/2/8/3;
+}
+body .test .heroBanner .gridTitre .div5 {
+  grid-area: 3/1/4/2;
+}
+body .test .heroBanner .gridTitre .div6 {
+  grid-area: 2/1/3/2;
+}
+body .test .heroBanner .gridTitre .div7 {
+  grid-area: 1/1/2/2;
+}
+body .test .heroBanner .gridTitre .div8 {
+  grid-area: 1/2/2/3;
+}
+body .test .heroBanner .gridTitre .div9 {
+  grid-area: 2/2/3/3;
+}
+body .test .heroBanner .gridTitre .div10 {
+  grid-area: 1/3/2/4;
+}
+body .test .heroBanner .gridTitre .div11 {
+  grid-area: 1/5/2/6;
+}
+body .test .heroBanner .gridTitre .div12 {
+  grid-area: 1/4/2/5;
+}
+body .test .heroBanner .gridTitre .div13 {
+  grid-area: 1/9/2/10;
+}
+body .test .heroBanner .gridTitre .div14 {
+  grid-area: 1/10/2/11;
+}
+body .test .heroBanner .gridTitre .div15 {
+  grid-area: 6/9/7/10;
+}
+body .test .heroBanner .gridTitre .div16 {
+  grid-area: 7/9/8/10;
+}
+body .test .heroBanner .gridTitre .div17 {
+  grid-area: 7/10/8/11;
+}
+body .test .heroBanner .gridTitre .div18 {
+  grid-area: 6/10/7/11;
+}
+body .test .heroBanner .gridTitre .div19 {
+  grid-area: 6/8/7/9;
+}
+body .test .heroBanner .gridTitre .div20 {
+  grid-area: 7/7/8/8;
+}
+body .test .heroBanner .gridTitre .div21 {
+  grid-area: 7/6/8/7;
+}
+body .test .heroBanner .gridTitre .div23 {
+  grid-area: 5/1/6/2;
+}
+body .test .heroBanner .gridTitre .div24 {
+  grid-area: 4/1/5/2;
+}
+body .test .heroBanner .gridTitre .div25 {
+  grid-area: 6/2/7/3;
+}
+body .test .heroBanner .gridTitre .div26 {
+  grid-area: 7/3/8/4;
+}
+body .test .heroBanner .gridTitre .div27 {
+  grid-area: 7/4/8/5;
+}
+body .test .heroBanner .gridTitre .div28 {
+  grid-area: 7/5/8/6;
+}
+body .test .heroBanner .gridTitre .div29 {
+  grid-area: 6/5/7/6;
+}
+body .test .heroBanner .gridTitre .div30 {
+  grid-area: 6/6/7/7;
+}
+body .test .heroBanner .gridTitre .div31 {
+  grid-area: 6/7/7/8;
+}
+body .test .heroBanner .gridTitre .div32 {
+  grid-area: 5/8/6/9;
+}
+body .test .heroBanner .gridTitre .div33 {
+  grid-area: 5/9/6/10;
+}
+body .test .heroBanner .gridTitre .div34 {
+  grid-area: 5/10/6/11;
+}
+body .test .heroBanner .gridTitre .div35 {
+  grid-area: 4/10/5/11;
+}
+body .test .heroBanner .gridTitre .div36 {
+  grid-area: 3/10/4/11;
+}
+body .test .heroBanner .gridTitre .div37 {
+  grid-area: 2/10/3/11;
+}
+body .test .heroBanner .gridTitre .div38 {
+  grid-area: 2/9/3/10;
+}
+body .test .heroBanner .gridTitre .div39 {
+  grid-area: 2/8/3/9;
+}
+body .test .heroBanner .gridTitre .div40 {
+  grid-area: 1/8/2/9;
+}
+body .test .heroBanner .gridTitre .div41 {
+  grid-area: 1/7/2/8;
+}
+body .test .heroBanner .gridTitre .div42 {
+  grid-area: 1/6/2/7;
+}
+body .test .heroBanner .gridTitre .div43 {
+  grid-area: 2/5/3/6;
+}
+body .test .heroBanner .gridTitre .div44 {
+  grid-area: 2/4/3/5;
+}
+body .test .heroBanner .gridTitre .div45 {
+  grid-area: 2/3/3/4;
+}
+body .test .heroBanner .gridTitre .div46 {
+  grid-area: 3/2/4/3;
+}
+body .test .heroBanner .gridTitre .div47 {
+  grid-area: 4/2/5/3;
+}
+body .test .heroBanner .gridTitre .miniDrapeau {
+  height: 70%;
+}
+body .test .heroBanner .gridTitre .divTitre {
+  grid-area: 3/3/6/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+body .test .heroBanner .gridTitre .divTitre H1 {
+  font-family: "ProductSansBlack";
+  font-size: 70px;
+  margin: 0;
+  color: #031927;
+}
+body .test .heroBanner .gridTitre .divTitre H3 {
+  font-family: "ProductSansBlack";
+  font-size: 30px;
+  margin: 5px;
+  color: #031927;
+}
+body .test .heroBanner .gridTitreNone {
+  display: none;
+}
+body .test .biographie {
+  height: 975px;
+  width: 50%;
+  position: relative;
+  margin-bottom: 65px;
+}
+body .test .biographie .gridBioNone {
+  display: none;
+}
+body .test .biographie .gridBio {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url("../images/Font-claire.png");
+  background-repeat: repeat;
+}
+body .test .biographie .gridBio .div1 {
+  grid-area: 1/1/2/2;
+}
+body .test .biographie .gridBio .div2 {
+  grid-area: 2/1/3/2;
+}
+body .test .biographie .gridBio .div3 {
+  grid-area: 3/1/4/2;
+}
+body .test .biographie .gridBio .div4 {
+  grid-area: 4/1/5/2;
+}
+body .test .biographie .gridBio .div5 {
+  grid-area: 5/1/6/2;
+}
+body .test .biographie .gridBio .div6 {
+  grid-area: 6/1/7/2;
+}
+body .test .biographie .gridBio .div7 {
+  grid-area: 7/1/8/2;
+}
+body .test .biographie .gridBio .div8 {
+  grid-area: 11/1/12/2;
+}
+body .test .biographie .gridBio .div9 {
+  grid-area: 12/1/13/2;
+}
+body .test .biographie .gridBio .div10 {
+  grid-area: 13/1/14/2;
+}
+body .test .biographie .gridBio .div11 {
+  grid-area: 14/1/15/2;
+}
+body .test .biographie .gridBio .div12 {
+  grid-area: 15/1/16/2;
+}
+body .test .biographie .gridBio .div13 {
+  grid-area: 15/2/16/3;
+}
+body .test .biographie .gridBio .div14 {
+  grid-area: 14/2/15/3;
+}
+body .test .biographie .gridBio .div15 {
+  grid-area: 13/2/14/3;
+}
+body .test .biographie .gridBio .div16 {
+  grid-area: 15/3/16/4;
+}
+body .test .biographie .gridBio .div17 {
+  grid-area: 15/4/16/5;
+}
+body .test .biographie .gridBio .div18 {
+  grid-area: 15/5/16/6;
+}
+body .test .biographie .gridBio .div19 {
+  grid-area: 14/5/15/6;
+}
+body .test .biographie .gridBio .div20 {
+  grid-area: 15/6/16/7;
+}
+body .test .biographie .gridBio .div21 {
+  grid-area: 14/6/15/7;
+}
+body .test .biographie .gridBio .div22 {
+  grid-area: 15/7/16/8;
+}
+body .test .biographie .gridBio .div23 {
+  grid-area: 14/7/15/8;
+}
+body .test .biographie .gridBio .div24 {
+  grid-area: 13/7/14/8;
+}
+body .test .biographie .gridBio .div25 {
+  grid-area: 12/8/13/9;
+}
+body .test .biographie .gridBio .div26 {
+  grid-area: 13/8/14/9;
+}
+body .test .biographie .gridBio .div27 {
+  grid-area: 14/8/15/9;
+}
+body .test .biographie .gridBio .div28 {
+  grid-area: 15/8/16/9;
+}
+body .test .biographie .gridBio .div29 {
+  grid-area: 15/9/16/10;
+}
+body .test .biographie .gridBio .div30 {
+  grid-area: 14/9/15/10;
+}
+body .test .biographie .gridBio .div31 {
+  grid-area: 13/9/14/10;
+}
+body .test .biographie .gridBio .div32 {
+  grid-area: 12/9/13/10;
+}
+body .test .biographie .gridBio .div33 {
+  grid-area: 11/9/12/10;
+}
+body .test .biographie .gridBio .div34 {
+  grid-area: 10/9/11/10;
+}
+body .test .biographie .gridBio .div35 {
+  grid-area: 9/9/10/10;
+}
+body .test .biographie .gridBio .div36 {
+  grid-area: 8/9/9/10;
+}
+body .test .biographie .gridBio .div37 {
+  grid-area: 7/9/8/10;
+}
+body .test .biographie .gridBio .div38 {
+  grid-area: 6/10/7/11;
+}
+body .test .biographie .gridBio .div39 {
+  grid-area: 4/10/5/11;
+}
+body .test .biographie .gridBio .div40 {
+  grid-area: 5/10/6/11;
+}
+body .test .biographie .gridBio .div41 {
+  grid-area: 3/10/4/11;
+}
+body .test .biographie .gridBio .div42 {
+  grid-area: 2/10/3/11;
+}
+body .test .biographie .gridBio .div43 {
+  grid-area: 1/10/2/11;
+}
+body .test .biographie .gridBio .div44 {
+  grid-area: 1/9/2/10;
+}
+body .test .biographie .gridBio .div45 {
+  grid-area: 1/8/2/9;
+}
+body .test .biographie .gridBio .div46 {
+  grid-area: 1/7/2/8;
+}
+body .test .biographie .gridBio .div47 {
+  grid-area: 1/6/2/7;
+}
+body .test .biographie .gridBio .div48 {
+  grid-area: 1/5/2/6;
+}
+body .test .biographie .gridBio .div49 {
+  grid-area: 1/4/2/5;
+}
+body .test .biographie .gridBio .div50 {
+  grid-area: 1/3/2/4;
+}
+body .test .biographie .gridBio .div51 {
+  grid-area: 1/2/2/3;
+}
+body .test .biographie .gridBio .div52 {
+  grid-area: 2/2/3/3;
+}
+body .test .biographie .gridBio .div53 {
+  grid-area: 3/2/4/3;
+}
+body .test .biographie .gridBio .div54 {
+  grid-area: 4/2/5/3;
+}
+body .test .biographie .gridBio .div55 {
+  grid-area: 5/2/6/3;
+}
+body .test .biographie .gridBio .div56 {
+  grid-area: 2/3/3/4;
+}
+body .test .biographie .gridBio .div57 {
+  grid-area: 3/3/4/4;
+}
+body .test .biographie .gridBio .div58 {
+  grid-area: 2/4/3/5;
+}
+body .test .biographie .gridBio .div59 {
+  grid-area: 2/5/3/6;
+}
+body .test .biographie .gridBio .div60 {
+  grid-area: 2/6/3/7;
+}
+body .test .biographie .gridBio .div61 {
+  grid-area: 2/7/3/8;
+}
+body .test .biographie .gridBio .div62 {
+  grid-area: 2/8/3/9;
+}
+body .test .biographie .gridBio .div63 {
+  grid-area: 2/9/3/10;
+}
+body .test .biographie .gridBio .div64 {
+  grid-area: 3/9/4/10;
+}
+body .test .biographie .gridBio .div65 {
+  grid-area: 7/10/8/11;
+}
+body .test .biographie .gridBio .div66 {
+  grid-area: 8/10/9/11;
+}
+body .test .biographie .gridBio .div67 {
+  grid-area: 9/10/10/11;
+}
+body .test .biographie .gridBio .div68 {
+  grid-area: 10/10/11/11;
+}
+body .test .biographie .gridBio .div69 {
+  grid-area: 11/10/12/11;
+}
+body .test .biographie .gridBio .div70 {
+  grid-area: 12/10/13/11;
+}
+body .test .biographie .gridBio .div71 {
+  grid-area: 13/10/14/11;
+}
+body .test .biographie .gridBio .div72 {
+  grid-area: 14/10/15/11;
+}
+body .test .biographie .gridBio .div73 {
+  grid-area: 15/10/16/11;
+}
+body .test .biographie .gridBio .div74 {
+  grid-area: 8/1/9/2;
+}
+body .test .biographie .gridBio .div75 {
+  grid-area: 9/1/10/2;
+}
+body .test .biographie .gridBio .div76 {
+  grid-area: 10/1/11/2;
+}
+body .test .biographie .gridBio .div77 {
+  grid-area: 11/2/12/3;
+}
+body .test .biographie .gridBio .div78 {
+  grid-area: 12/2/13/3;
+}
+body .test .biographie .gridBio .div79 {
+  grid-area: 13/3/14/4;
+}
+body .test .biographie .gridBio .div80 {
+  grid-area: 14/3/15/4;
+}
+body .test .biographie .gridBio .div81 {
+  grid-area: 14/4/15/5;
+}
+body .test .biographie .gridBio .div82 {
+  grid-area: 13/5/14/6;
+}
+body .test .biographie .gridBio .div83 {
+  grid-area: 13/6/14/7;
+}
+body .test .biographie .gridBio .div84 {
+  grid-area: 12/7/13/8;
+}
+body .test .biographie .gridBio .div85 {
+  grid-area: 11/8/12/9;
+}
+body .test .biographie .gridBio .div86 {
+  grid-area: 10/8/11/9;
+}
+body .test .biographie .gridBio .div87 {
+  grid-area: 9/8/10/9;
+}
+body .test .biographie .gridBio .div88 {
+  grid-area: 8/8/9/9;
+}
+body .test .biographie .gridBio .div89 {
+  grid-area: 7/8/8/9;
+}
+body .test .biographie .gridBio .div90 {
+  grid-area: 6/9/7/10;
+}
+body .test .biographie .gridBio .div91 {
+  grid-area: 5/9/6/10;
+}
+body .test .biographie .gridBio .div92 {
+  grid-area: 4/9/5/10;
+}
+body .test .biographie .gridBio .div93 {
+  grid-area: 3/8/4/9;
+}
+body .test .biographie .gridBio .div94 {
+  grid-area: 3/7/4/8;
+}
+body .test .biographie .gridBio .div95 {
+  grid-area: 3/6/4/7;
+}
+body .test .biographie .gridBio .div96 {
+  grid-area: 3/5/4/6;
+}
+body .test .biographie .gridBio .div97 {
+  grid-area: 3/4/4/5;
+}
+body .test .biographie .gridBio .div98 {
+  grid-area: 4/3/5/4;
+}
+body .test .biographie .gridBio .div99 {
+  grid-area: 6/2/7/3;
+}
+body .test .biographie .gridBio .div100 {
+  grid-area: 7/2/8/3;
+}
+body .test .biographie .gridBio .div101 {
+  grid-area: 8/2/9/3;
+}
+body .test .biographie .gridBio .div102 {
+  grid-area: 5/3/6/4;
+}
+body .test .biographie .gridBio .titreBio {
+  grid-area: 4/4/6/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .test .biographie .gridBio .textBio {
+  grid-area: 6/3/12/8;
+}
+body .test .biographie .gridBio h3 {
+  font-family: "ProductSansBlack";
+  font-size: 50px;
+  margin: 0;
+  color: #031927;
+}
+body .test .biographie .gridBio p {
+  font-family: "Montserrat Alternates";
+  font-size: 16px;
+  color: #031927;
+  text-align: center;
+}
+body .test .techno {
+  height: 975px;
+  width: 50%;
+  position: relative;
+  margin-bottom: 65px;
+}
+body .test .techno .technoGridNone {
+  display: none;
+}
+body .test .techno .technoGrid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url("../images/Font-claire.png");
+  background-repeat: repeat;
+}
+body .test .techno .div1 {
+  grid-area: 4/2/5/3;
+}
+body .test .techno .div2 {
+  grid-area: 5/2/6/3;
+}
+body .test .techno .div3 {
+  grid-area: 6/2/7/3;
+}
+body .test .techno .div4 {
+  grid-area: 7/2/8/3;
+}
+body .test .techno .div5 {
+  grid-area: 8/2/9/3;
+}
+body .test .techno .div6 {
+  grid-area: 9/2/10/3;
+}
+body .test .techno .div7 {
+  grid-area: 9/3/10/4;
+}
+body .test .techno .div8 {
+  grid-area: 10/3/11/4;
+}
+body .test .techno .div9 {
+  grid-area: 11/3/12/4;
+}
+body .test .techno .div10 {
+  grid-area: 12/4/13/5;
+}
+body .test .techno .div11 {
+  grid-area: 13/5/14/6;
+}
+body .test .techno .div12 {
+  grid-area: 14/5/15/6;
+}
+body .test .techno .div13 {
+  grid-area: 15/6/16/7;
+}
+body .test .techno .div14 {
+  grid-area: 9/10/10/11;
+}
+body .test .techno .div15 {
+  grid-area: 8/10/9/11;
+}
+body .test .techno .div16 {
+  grid-area: 7/10/8/11;
+}
+body .test .techno .div17 {
+  grid-area: 6/10/7/11;
+}
+body .test .techno .div18 {
+  grid-area: 5/10/6/11;
+}
+body .test .techno .div19 {
+  grid-area: 4/10/5/11;
+}
+body .test .techno .div20 {
+  grid-area: 3/9/4/10;
+}
+body .test .techno .div21 {
+  grid-area: 2/8/3/9;
+}
+body .test .techno .div22 {
+  grid-area: 2/7/3/8;
+}
+body .test .techno .div23 {
+  grid-area: 1/6/2/7;
+}
+body .test .techno .div24 {
+  grid-area: 1/5/2/6;
+}
+body .test .techno .div25 {
+  grid-area: 1/4/2/5;
+}
+body .test .techno .div26 {
+  grid-area: 2/3/3/4;
+}
+body .test .techno .div27 {
+  grid-area: 3/3/4/4;
+}
+body .test .techno .div28 {
+  grid-area: 15/7/16/8;
+}
+body .test .techno .div29 {
+  grid-area: 15/8/16/9;
+}
+body .test .techno .div30 {
+  grid-area: 15/9/16/10;
+}
+body .test .techno .div31 {
+  grid-area: 14/9/15/10;
+}
+body .test .techno .div32 {
+  grid-area: 13/10/14/11;
+}
+body .test .techno .div33 {
+  grid-area: 12/10/13/11;
+}
+body .test .techno .div34 {
+  grid-area: 11/10/12/11;
+}
+body .test .techno .div35 {
+  grid-area: 10/10/11/11;
+}
+body .test .techno .div36 {
+  grid-area: 1/1/2/2;
+}
+body .test .techno .div37 {
+  grid-area: 3/1/4/2;
+}
+body .test .techno .div38 {
+  grid-area: 5/1/6/2;
+}
+body .test .techno .div39 {
+  grid-area: 7/1/8/2;
+}
+body .test .techno .div40 {
+  grid-area: 9/1/10/2;
+}
+body .test .techno .div41 {
+  grid-area: 11/1/12/2;
+}
+body .test .techno .div42 {
+  grid-area: 13/1/14/2;
+}
+body .test .techno .div43 {
+  grid-area: 15/1/16/2;
+}
+body .test .techno .div44 {
+  grid-area: 14/2/15/3;
+}
+body .test .techno .div45 {
+  grid-area: 15/3/16/4;
+}
+body .test .techno .div46 {
+  grid-area: 14/4/15/5;
+}
+body .test .techno .div47 {
+  grid-area: 15/5/16/6;
+}
+body .test .techno .div48 {
+  grid-area: 13/3/14/4;
+}
+body .test .techno .div49 {
+  grid-area: 12/2/13/3;
+}
+body .test .techno .div50 {
+  grid-area: 10/2/11/3;
+}
+body .test .techno .div51 {
+  grid-area: 2/2/3/3;
+}
+body .test .techno .div52 {
+  grid-area: 1/3/2/4;
+}
+body .test .techno .div53 {
+  grid-area: 1/7/2/8;
+}
+body .test .techno .div54 {
+  grid-area: 1/9/2/10;
+}
+body .test .techno .div55 {
+  grid-area: 2/10/3/11;
+}
+body .test .techno .div56 {
+  grid-area: 14/10/15/11;
+}
+body .test .techno .div57 {
+  grid-area: 15/10/16/11;
+}
+body .test .techno .div58 {
+  grid-area: 15/4/16/5;
+}
+body .test .techno .div59 {
+  grid-area: 13/4/14/5;
+}
+body .test .techno .div60 {
+  grid-area: 12/3/13/4;
+}
+body .test .techno .div61 {
+  grid-area: 15/2/16/3;
+}
+body .test .techno .div62 {
+  grid-area: 14/3/15/4;
+}
+body .test .techno .div63 {
+  grid-area: 13/2/14/3;
+}
+body .test .techno .div64 {
+  grid-area: 14/1/15/2;
+}
+body .test .techno .div65 {
+  grid-area: 12/1/13/2;
+}
+body .test .techno .div66 {
+  grid-area: 11/2/12/3;
+}
+body .test .techno .div67 {
+  grid-area: 10/1/11/2;
+}
+body .test .techno .div68 {
+  grid-area: 8/1/9/2;
+}
+body .test .techno .div69 {
+  grid-area: 6/1/7/2;
+}
+body .test .techno .div70 {
+  grid-area: 4/1/5/2;
+}
+body .test .techno .div71 {
+  grid-area: 2/1/3/2;
+}
+body .test .techno .div72 {
+  grid-area: 1/2/2/3;
+}
+body .test .techno .div73 {
+  grid-area: 3/2/4/3;
+}
+body .test .techno .div74 {
+  grid-area: 1/8/2/9;
+}
+body .test .techno .div75 {
+  grid-area: 2/9/3/10;
+}
+body .test .techno .div76 {
+  grid-area: 1/10/2/11;
+}
+body .test .techno .div77 {
+  grid-area: 3/10/4/11;
+}
+body .test .techno .titreTechno {
+  grid-area: 3/4/5/9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body .test .techno .titreTechno h3 {
+  font-family: "ProductSansBlack";
+  font-size: 50px;
+  margin: 0;
+  color: #031927;
+}
+body .test .techno .iconTech {
+  position: absolute;
+  width: 78px;
+  height: 78px;
+}
+body .test .techno #php {
+  bottom: 120px;
+  left: 55%;
+}
+body .test .techno #html {
+  top: 320px;
+  left: 20%;
+}
+body .test .techno #symfony {
+  top: 430px;
+  right: 15%;
+}
+body .test .techno #laravel {
+  top: 275px;
+  right: 40%;
+}
+body .test .techno #js {
+  bottom: 275px;
+  right: 12%;
+}
+body .test .techno #vue {
+  bottom: 250px;
+  left: 45%;
+}
+body .test .techno #node {
+  bottom: 430px;
+  left: 40%;
+}
+body .test .techno #css {
+  top: 260px;
+  right: 15%;
+}
+
+.vertFoncer {
+  background-color: #8DC03F;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertClaire {
+  background-color: #A6C84F;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 500px) {
+  .mobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bombe {
+    display: none;
+  }
+  .pc {
+    display: none;
+  }
+  body .header {
+    display: none;
+  }
+  body .test {
+    width: 100vw;
+    border-radius: 0;
+    background-image: url("../images/font-vert.png");
+    background-repeat: repeat;
+  }
+  body .test .heroBanner {
+    width: 100%;
+  }
+  body .test .heroBanner #bigChiffre1mobile {
+    font-size: 180px;
+    top: 20px;
+    left: 12vw;
+    margin: 0;
+    transform: rotate(30deg);
+  }
+  body .test .heroBanner #bigChiffre2mobile {
+    position: absolute;
+    font-size: 100px;
+    bottom: 5vh;
+    left: 5vw;
+    margin: 0;
+    transform: rotate(25deg);
+  }
+  body .test .heroBanner #bigChiffre3mobile {
+    position: absolute;
+    font-size: 150px;
+    top: 50px;
+    right: 11vw;
+    margin: 0;
+    transform: rotate(-30deg);
+  }
+  body .test .heroBanner #bigChiffre4mobile {
+    position: absolute;
+    font-size: 100px;
+    bottom: -5vh;
+    right: 15vw;
+    margin: 0;
+    transform: rotate(15deg);
+  }
+  body .test .heroBanner .gridTitre {
+    width: 100%;
+    height: 520px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    left: 0;
+  }
+  body .test .heroBanner .gridTitre .div24 {
+    grid-area: 3/1/4/2;
+  }
+  body .test .heroBanner .gridTitre .div25 {
+    grid-area: 2/1/3/2;
+  }
+  body .test .heroBanner .gridTitre .div26 {
+    grid-area: 2/2/3/3;
+  }
+  body .test .heroBanner .gridTitre .div27 {
+    grid-area: 1/2/2/3;
+  }
+  body .test .heroBanner .gridTitre .div28 {
+    grid-area: 1/3/2/4;
+  }
+  body .test .heroBanner .gridTitre .div29 {
+    grid-area: 1/4/2/5;
+  }
+  body .test .heroBanner .gridTitre .div30 {
+    grid-area: 1/5/2/6;
+  }
+  body .test .heroBanner .gridTitre .div31 {
+    grid-area: 2/6/3/7;
+  }
+  body .test .heroBanner .gridTitre .div32 {
+    grid-area: 6/6/7/7;
+  }
+  body .test .heroBanner .gridTitre .div33 {
+    grid-area: 7/5/8/6;
+  }
+  body .test .heroBanner .gridTitre .div34 {
+    grid-area: 8/5/9/6;
+  }
+  body .test .heroBanner .gridTitre .div35 {
+    grid-area: 8/4/9/5;
+  }
+  body .test .heroBanner .gridTitre .div36 {
+    grid-area: 8/3/9/4;
+  }
+  body .test .heroBanner .gridTitre .div38 {
+    grid-area: 7/2/8/3;
+  }
+  body .test .heroBanner .gridTitre .div39 {
+    grid-area: 6/1/7/2;
+  }
+  body .test .heroBanner .gridTitre .div40 {
+    grid-area: 5/1/6/2;
+  }
+  body .test .heroBanner .gridTitre .div42 {
+    grid-area: 5/6/6/7;
+  }
+  body .test .heroBanner .gridTitre .div43 {
+    grid-area: 4/6/5/7;
+  }
+  body .test .heroBanner .gridTitre .div44 {
+    grid-area: 3/6/4/7;
+  }
+  body .test .heroBanner .gridTitre .div45 {
+    grid-area: 4/1/5/2;
+  }
+  body .test .heroBanner .gridTitre .div1 {
+    grid-area: 1/1/2/2;
+  }
+  body .test .heroBanner .gridTitre .div2 {
+    grid-area: 7/1/8/2;
+  }
+  body .test .heroBanner .gridTitre .div7 {
+    grid-area: 8/1/9/2;
+  }
+  body .test .heroBanner .gridTitre .div6 {
+    grid-area: 8/6/9/7;
+  }
+  body .test .heroBanner .gridTitre .div3 {
+    grid-area: 1/6/2/7;
+  }
+  body .test .heroBanner .gridTitre .div8 {
+    grid-area: 8/2/9/3;
+  }
+  body .test .heroBanner .gridTitre .div5 {
+    grid-area: 7/6/8/7;
+  }
+  body .test .heroBanner .gridTitre .div4 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div9 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div10 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div37 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div11 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div12 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div13 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div14 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div15 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div16 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div17 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div18 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div19 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div20 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div21 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div23 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div41 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div46 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .div47 {
+    display: none;
+  }
+  body .test .heroBanner .gridTitre .divTitre {
+    grid-area: 3/2/6/6;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 5px;
+  }
+  body .test .heroBanner .gridTitre .divTitre H1 {
+    font-family: "ProductSansBlack";
+    font-size: 45px;
+    margin: 0;
+    color: #031927;
+  }
+  body .test .heroBanner .gridTitre .divTitre H3 {
+    font-family: "ProductSansBlack";
+    font-size: 20px;
+    margin: 5px;
+    color: #031927;
+  }
+  body .test .biographie {
+    width: 100%;
+  }
+  body .test .biographie .gridBio {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(14, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    width: 100%;
+    height: 845px;
+  }
+  body .test .biographie .gridBio .div80 {
+    grid-area: 1/3/2/4;
+  }
+  body .test .biographie .gridBio .div81 {
+    grid-area: 2/2/3/3;
+  }
+  body .test .biographie .gridBio .div82 {
+    grid-area: 3/1/4/2;
+  }
+  body .test .biographie .gridBio .div83 {
+    grid-area: 5/1/6/2;
+  }
+  body .test .biographie .gridBio .div84 {
+    grid-area: 4/1/5/2;
+  }
+  body .test .biographie .gridBio .div85 {
+    grid-area: 6/1/7/2;
+  }
+  body .test .biographie .gridBio .div86 {
+    grid-area: 13/1/14/2;
+  }
+  body .test .biographie .gridBio .div87 {
+    grid-area: 14/1/15/2;
+  }
+  body .test .biographie .gridBio .div88 {
+    grid-area: 14/2/15/3;
+  }
+  body .test .biographie .gridBio .div89 {
+    grid-area: 14/4/15/5;
+  }
+  body .test .biographie .gridBio .div90 {
+    grid-area: 14/5/15/6;
+  }
+  body .test .biographie .gridBio .div91 {
+    grid-area: 13/5/14/6;
+  }
+  body .test .biographie .gridBio .div92 {
+    grid-area: 12/5/13/6;
+  }
+  body .test .biographie .gridBio .div93 {
+    grid-area: 11/6/12/7;
+  }
+  body .test .biographie .gridBio .div94 {
+    grid-area: 10/6/11/7;
+  }
+  body .test .biographie .gridBio .div95 {
+    grid-area: 9/6/10/7;
+  }
+  body .test .biographie .gridBio .div96 {
+    grid-area: 8/6/9/7;
+  }
+  body .test .biographie .gridBio .div97 {
+    grid-area: 1/5/2/6;
+  }
+  body .test .biographie .gridBio .div98 {
+    grid-area: 1/4/2/5;
+  }
+  body .test .biographie .gridBio .div99 {
+    grid-area: 14/3/15/4;
+  }
+  body .test .biographie .gridBio .div100 {
+    grid-area: 2/6/3/7;
+  }
+  body .test .biographie .gridBio .div69 {
+    grid-area: 1/6/2/7;
+  }
+  body .test .biographie .gridBio .div70 {
+    grid-area: 13/6/14/7;
+  }
+  body .test .biographie .gridBio .div71 {
+    grid-area: 1/2/2/3;
+  }
+  body .test .biographie .gridBio .div72 {
+    grid-area: 1/1/2/2;
+  }
+  body .test .biographie .gridBio .div73 {
+    grid-area: 2/1/3/2;
+  }
+  body .test .biographie .gridBio .div67 {
+    grid-area: 14/6/15/7;
+  }
+  body .test .biographie .gridBio .div65 {
+    grid-area: 12/6/13/7;
+  }
+  body .test .biographie .gridBio .titreBio {
+    grid-area: 3/2/5/7;
+  }
+  body .test .biographie .gridBio .para {
+    margin: 0;
+    padding: 5px;
+    font-size: 14px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  body .test .biographie .gridBio .para1 {
+    grid-area: 5/2/7/7;
+  }
+  body .test .biographie .gridBio .para2 {
+    grid-area: 8/1/11/6;
+  }
+  body .test .biographie .gridBio .para3 {
+    grid-area: 11/1/13/5;
+  }
+  body .test .biographie .gridBio .div101 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div102 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div1 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div2 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div3 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div4 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div5 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div6 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div7 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div8 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div9 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div10 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div11 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div12 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div13 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div14 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div15 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div16 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div17 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div18 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div19 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div20 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div21 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div22 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div23 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div24 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div25 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div26 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div27 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div28 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div29 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div30 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div31 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div32 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div33 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div34 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div35 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div36 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div37 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div38 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div39 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div40 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div41 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div42 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div43 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div44 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div45 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div46 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div47 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div48 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div49 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div50 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div51 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div52 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div53 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div54 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div55 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div56 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div57 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div58 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div59 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div60 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div61 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div62 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div63 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div64 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div66 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div68 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div74 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div75 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div76 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div77 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div78 {
+    display: none;
+  }
+  body .test .biographie .gridBio .div79 {
+    display: none;
+  }
+  body .test .techno {
+    width: 100%;
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=main.css.map */

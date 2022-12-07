@@ -1,0 +1,533 @@
+@font-face {
+  font-family: "ProductSansBlack";
+  src: url("../fonts/google-sans-cufonfonts/ProductSans-Black.ttf");
+}
+.color1 {
+  color: #1876D1;
+  font-family: "ProductSansBlack";
+}
+
+.color2 {
+  color: #388E3C;
+  font-family: "ProductSansBlack";
+}
+
+.color3 {
+  color: #D32F2F;
+  font-family: "ProductSansBlack";
+}
+
+.color4 {
+  color: #7B20A2;
+  font-family: "ProductSansBlack";
+}
+
+.drapeauClique {
+  position: absolute;
+  height: 260px;
+  top: 30vh;
+  left: 50%;
+  translate: -50%;
+}
+
+.drapeauNone {
+  display: none;
+}
+
+.number {
+  width: 65px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.number span {
+  font-size: 30px;
+}
+
+body {
+  background-color: #031927;
+  margin: 0;
+  padding: 0;
+}
+body .header {
+  height: 65px;
+}
+body .test {
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  width: 1300px;
+  border-radius: 65px;
+  background-image: url("../images/font-vert.png");
+  background-repeat: repeat;
+}
+body .test .heroBanner {
+  position: relative;
+  height: 780px;
+  width: 100%;
+}
+body .test .heroBanner .bigChiffre {
+  position: absolute;
+  z-index: 10;
+}
+body .test .heroBanner #bigChiffre1 {
+  font-size: 380px;
+  top: -60px;
+  left: 12vw;
+  margin: 0;
+  transform: rotate(-30deg);
+}
+body .test .heroBanner #bigChiffre2 {
+  position: absolute;
+  font-size: 400px;
+  bottom: 5vh;
+  left: 5vw;
+  margin: 0;
+  transform: rotate(25deg);
+}
+body .test .heroBanner #bigChiffre3 {
+  position: absolute;
+  font-size: 350px;
+  top: -50px;
+  right: 5vw;
+  margin: 0;
+  transform: rotate(-45deg);
+}
+body .test .heroBanner #bigChiffre4 {
+  position: absolute;
+  font-size: 400px;
+  bottom: -5vh;
+  right: 15vw;
+  margin: 0;
+  transform: rotate(15deg);
+}
+body .test .heroBanner .gridTitre {
+  position: absolute;
+  top: 130px;
+  left: 325px;
+  width: 650px;
+  height: 455px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(7, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  background-image: url("../images/Font-claire.png");
+  background-repeat: repeat;
+}
+body .test .heroBanner .gridTitre .div1 {
+  grid-area: 7/8/8/9;
+}
+body .test .heroBanner .gridTitre .div2 {
+  grid-area: 6/1/7/2;
+}
+body .test .heroBanner .gridTitre .div3 {
+  grid-area: 7/1/8/2;
+}
+body .test .heroBanner .gridTitre .div4 {
+  grid-area: 7/2/8/3;
+}
+body .test .heroBanner .gridTitre .div5 {
+  grid-area: 3/1/4/2;
+}
+body .test .heroBanner .gridTitre .div6 {
+  grid-area: 2/1/3/2;
+}
+body .test .heroBanner .gridTitre .div7 {
+  grid-area: 1/1/2/2;
+}
+body .test .heroBanner .gridTitre .div8 {
+  grid-area: 1/2/2/3;
+}
+body .test .heroBanner .gridTitre .div9 {
+  grid-area: 2/2/3/3;
+}
+body .test .heroBanner .gridTitre .div10 {
+  grid-area: 1/3/2/4;
+}
+body .test .heroBanner .gridTitre .div11 {
+  grid-area: 1/5/2/6;
+}
+body .test .heroBanner .gridTitre .div12 {
+  grid-area: 1/4/2/5;
+}
+body .test .heroBanner .gridTitre .div13 {
+  grid-area: 1/9/2/10;
+}
+body .test .heroBanner .gridTitre .div14 {
+  grid-area: 1/10/2/11;
+}
+body .test .heroBanner .gridTitre .div15 {
+  grid-area: 6/9/7/10;
+}
+body .test .heroBanner .gridTitre .div16 {
+  grid-area: 7/9/8/10;
+}
+body .test .heroBanner .gridTitre .div17 {
+  grid-area: 7/10/8/11;
+}
+body .test .heroBanner .gridTitre .div18 {
+  grid-area: 6/10/7/11;
+}
+body .test .heroBanner .gridTitre .div19 {
+  grid-area: 6/8/7/9;
+}
+body .test .heroBanner .gridTitre .div20 {
+  grid-area: 7/7/8/8;
+}
+body .test .heroBanner .gridTitre .div21 {
+  grid-area: 7/6/8/7;
+}
+body .test .heroBanner .gridTitre .div23 {
+  grid-area: 5/1/6/2;
+}
+body .test .heroBanner .gridTitre .div24 {
+  grid-area: 4/1/5/2;
+}
+body .test .heroBanner .gridTitre .div25 {
+  grid-area: 6/2/7/3;
+}
+body .test .heroBanner .gridTitre .div26 {
+  grid-area: 7/3/8/4;
+}
+body .test .heroBanner .gridTitre .div27 {
+  grid-area: 7/4/8/5;
+}
+body .test .heroBanner .gridTitre .div28 {
+  grid-area: 7/5/8/6;
+}
+body .test .heroBanner .gridTitre .div29 {
+  grid-area: 6/5/7/6;
+}
+body .test .heroBanner .gridTitre .div30 {
+  grid-area: 6/6/7/7;
+}
+body .test .heroBanner .gridTitre .div31 {
+  grid-area: 6/7/7/8;
+}
+body .test .heroBanner .gridTitre .div32 {
+  grid-area: 5/8/6/9;
+}
+body .test .heroBanner .gridTitre .div33 {
+  grid-area: 5/9/6/10;
+}
+body .test .heroBanner .gridTitre .div34 {
+  grid-area: 5/10/6/11;
+}
+body .test .heroBanner .gridTitre .div35 {
+  grid-area: 4/10/5/11;
+}
+body .test .heroBanner .gridTitre .div36 {
+  grid-area: 3/10/4/11;
+}
+body .test .heroBanner .gridTitre .div37 {
+  grid-area: 2/10/3/11;
+}
+body .test .heroBanner .gridTitre .div38 {
+  grid-area: 2/9/3/10;
+}
+body .test .heroBanner .gridTitre .div39 {
+  grid-area: 2/8/3/9;
+}
+body .test .heroBanner .gridTitre .div40 {
+  grid-area: 1/8/2/9;
+}
+body .test .heroBanner .gridTitre .div41 {
+  grid-area: 1/7/2/8;
+}
+body .test .heroBanner .gridTitre .div42 {
+  grid-area: 1/6/2/7;
+}
+body .test .heroBanner .gridTitre .div43 {
+  grid-area: 2/5/3/6;
+}
+body .test .heroBanner .gridTitre .div44 {
+  grid-area: 2/4/3/5;
+}
+body .test .heroBanner .gridTitre .div45 {
+  grid-area: 2/3/3/4;
+}
+body .test .heroBanner .gridTitre .div46 {
+  grid-area: 3/2/4/3;
+}
+body .test .heroBanner .gridTitre .div47 {
+  grid-area: 4/2/5/3;
+}
+body .test .heroBanner .gridTitre .miniDrapeau {
+  height: 70%;
+}
+body .test .heroBanner .gridTitre .divTitre {
+  grid-area: 3/3/6/9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15px;
+}
+body .test .heroBanner .gridTitre .divTitre H1 {
+  font-family: "ProductSansBlack";
+  font-size: 70px;
+  margin: 0;
+  color: #031927;
+}
+body .test .heroBanner .gridTitre .divTitre H3 {
+  font-family: "ProductSansBlack";
+  font-size: 30px;
+  margin: 5px;
+  color: #031927;
+}
+body .test .heroBanner .gridTitreNone {
+  display: none;
+}
+body .test .biographie {
+  height: 975px;
+  width: 50%;
+  position: relative;
+}
+body .test .biographie .gridBio {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(15, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+body .test .biographie .gridBio .div1 {
+  grid-area: 1/1/2/2;
+}
+body .test .biographie .gridBio .div2 {
+  grid-area: 2/1/3/2;
+}
+body .test .biographie .gridBio .div3 {
+  grid-area: 3/1/4/2;
+}
+body .test .biographie .gridBio .div4 {
+  grid-area: 4/1/5/2;
+}
+body .test .biographie .gridBio .div5 {
+  grid-area: 5/1/6/2;
+}
+body .test .biographie .gridBio .div6 {
+  grid-area: 6/1/7/2;
+}
+body .test .biographie .gridBio .div7 {
+  grid-area: 7/1/8/2;
+}
+body .test .biographie .gridBio .div8 {
+  grid-area: 11/1/12/2;
+}
+body .test .biographie .gridBio .div9 {
+  grid-area: 12/1/13/2;
+}
+body .test .biographie .gridBio .div10 {
+  grid-area: 13/1/14/2;
+}
+body .test .biographie .gridBio .div11 {
+  grid-area: 14/1/15/2;
+}
+body .test .biographie .gridBio .div12 {
+  grid-area: 15/1/16/2;
+}
+body .test .biographie .gridBio .div13 {
+  grid-area: 15/2/16/3;
+}
+body .test .biographie .gridBio .div14 {
+  grid-area: 14/2/15/3;
+}
+body .test .biographie .gridBio .div15 {
+  grid-area: 13/2/14/3;
+}
+body .test .biographie .gridBio .div16 {
+  grid-area: 15/3/16/4;
+}
+body .test .biographie .gridBio .div17 {
+  grid-area: 15/4/16/5;
+}
+body .test .biographie .gridBio .div18 {
+  grid-area: 15/5/16/6;
+}
+body .test .biographie .gridBio .div19 {
+  grid-area: 14/5/15/6;
+}
+body .test .biographie .gridBio .div20 {
+  grid-area: 15/6/16/7;
+}
+body .test .biographie .gridBio .div21 {
+  grid-area: 14/6/15/7;
+}
+body .test .biographie .gridBio .div22 {
+  grid-area: 15/7/16/8;
+}
+body .test .biographie .gridBio .div23 {
+  grid-area: 14/7/15/8;
+}
+body .test .biographie .gridBio .div24 {
+  grid-area: 13/7/14/8;
+}
+body .test .biographie .gridBio .div25 {
+  grid-area: 12/8/13/9;
+}
+body .test .biographie .gridBio .div26 {
+  grid-area: 13/8/14/9;
+}
+body .test .biographie .gridBio .div27 {
+  grid-area: 14/8/15/9;
+}
+body .test .biographie .gridBio .div28 {
+  grid-area: 15/8/16/9;
+}
+body .test .biographie .gridBio .div29 {
+  grid-area: 15/9/16/10;
+}
+body .test .biographie .gridBio .div30 {
+  grid-area: 14/9/15/10;
+}
+body .test .biographie .gridBio .div31 {
+  grid-area: 13/9/14/10;
+}
+body .test .biographie .gridBio .div32 {
+  grid-area: 12/9/13/10;
+}
+body .test .biographie .gridBio .div33 {
+  grid-area: 11/9/12/10;
+}
+body .test .biographie .gridBio .div34 {
+  grid-area: 10/9/11/10;
+}
+body .test .biographie .gridBio .div35 {
+  grid-area: 9/9/10/10;
+}
+body .test .biographie .gridBio .div36 {
+  grid-area: 8/9/9/10;
+}
+body .test .biographie .gridBio .div37 {
+  grid-area: 7/9/8/10;
+}
+body .test .biographie .gridBio .div38 {
+  grid-area: 6/10/7/11;
+}
+body .test .biographie .gridBio .div39 {
+  grid-area: 4/10/5/11;
+}
+body .test .biographie .gridBio .div40 {
+  grid-area: 5/10/6/11;
+}
+body .test .biographie .gridBio .div41 {
+  grid-area: 3/10/4/11;
+}
+body .test .biographie .gridBio .div42 {
+  grid-area: 2/10/3/11;
+}
+body .test .biographie .gridBio .div43 {
+  grid-area: 1/10/2/11;
+}
+body .test .biographie .gridBio .div44 {
+  grid-area: 1/9/2/10;
+}
+body .test .biographie .gridBio .div45 {
+  grid-area: 1/8/2/9;
+}
+body .test .biographie .gridBio .div46 {
+  grid-area: 1/7/2/8;
+}
+body .test .biographie .gridBio .div47 {
+  grid-area: 1/6/2/7;
+}
+body .test .biographie .gridBio .div48 {
+  grid-area: 1/5/2/6;
+}
+body .test .biographie .gridBio .div49 {
+  grid-area: 1/4/2/5;
+}
+body .test .biographie .gridBio .div50 {
+  grid-area: 1/3/2/4;
+}
+body .test .biographie .gridBio .div51 {
+  grid-area: 1/2/2/3;
+}
+body .test .biographie .gridBio .div52 {
+  grid-area: 2/2/3/3;
+}
+body .test .biographie .gridBio .div53 {
+  grid-area: 3/2/4/3;
+}
+body .test .biographie .gridBio .div54 {
+  grid-area: 4/2/5/3;
+}
+body .test .biographie .gridBio .div55 {
+  grid-area: 5/2/6/3;
+}
+body .test .biographie .gridBio .div56 {
+  grid-area: 2/3/3/4;
+}
+body .test .biographie .gridBio .div57 {
+  grid-area: 3/3/4/4;
+}
+body .test .biographie .gridBio .div58 {
+  grid-area: 2/4/3/5;
+}
+body .test .biographie .gridBio .div59 {
+  grid-area: 2/5/3/6;
+}
+body .test .biographie .gridBio .div60 {
+  grid-area: 2/6/3/7;
+}
+body .test .biographie .gridBio .div61 {
+  grid-area: 2/7/3/8;
+}
+body .test .biographie .gridBio .div62 {
+  grid-area: 2/8/3/9;
+}
+body .test .biographie .gridBio .div63 {
+  grid-area: 2/9/3/10;
+}
+body .test .biographie .gridBio .div64 {
+  grid-area: 3/9/4/10;
+}
+body .test .biographie .gridBio .div65 {
+  grid-area: 7/10/8/11;
+}
+body .test .biographie .gridBio .div66 {
+  grid-area: 8/10/9/11;
+}
+body .test .biographie .gridBio .div67 {
+  grid-area: 9/10/10/11;
+}
+body .test .biographie .gridBio .div68 {
+  grid-area: 10/10/11/11;
+}
+body .test .biographie .gridBio .div69 {
+  grid-area: 11/10/12/11;
+}
+body .test .biographie .gridBio .div70 {
+  grid-area: 12/10/13/11;
+}
+body .test .biographie .gridBio .div71 {
+  grid-area: 13/10/14/11;
+}
+body .test .biographie .gridBio .div72 {
+  grid-area: 14/10/15/11;
+}
+body .test .biographie .gridBio .div73 {
+  grid-area: 15/10/16/11;
+}
+
+.vertFoncer {
+  background-color: #8DC03F;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vertClaire {
+  background-color: #A6C84F;
+  height: 65px;
+  width: 65px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*# sourceMappingURL=css.main.map */
